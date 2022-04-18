@@ -1,0 +1,42 @@
+.title-1 {
+		margin: 0;
+
+		font-size: 28px;
+		line-height: 40px;
+		font-weight: 600;
+		letter-spacing: -0.6px;	
+	}
+
+@media screen and (max-width: 1119px) {
+
+	.title-1::before {
+		content: "";
+		width: 4px;
+		height: 40px;
+		vertical-align: top;
+		
+		display: inline-block;
+		position: absolute;
+		left: 0;
+
+		background-color: #41F6D7;
+		border-radius: 0 4px 4px 0;
+	}
+}
+
+@media screen and (min-width: 1120px) {
+
+	.title-1::before {
+		content: "";
+		width: 3px;
+		height: 40px;
+		vertical-align: top;
+		
+		display: inline-block;
+		position: absolute;
+		left: 2px;
+
+		background-color: #41F6D7;
+		border-radius: 2px;
+	}
+}

@@ -1,6 +1,7 @@
 @import url('fonts/fonts.css');
 @import url('blocks/page/page.css');
-
+@import url('blocks/button/button.css');
+@import url('blocks/title-1/title-1.css');
 
 html {
   box-sizing: border-box;
@@ -9,10 +10,19 @@ html {
   box-sizing: inherit;
 }
 
-.page {
+* {
 	font-family: TT Lakes;
 }
 
+@media screen and (min-width: 1120px) {
+	.button--icon--request .button__label--none, 
+	.button--icon--status .button__label--none 	 {
+		
+		position: static;
+		font-size: 16px;
+		padding-right: 8px;
+	}
+}
 
 
 

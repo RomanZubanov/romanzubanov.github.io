@@ -1,4 +1,3 @@
-
 .button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -10,7 +9,8 @@
 }
 
 .button__label {
-	font-size: 16;
+	padding-right: 8px;
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 16px;
 	vertical-align: middle;
@@ -41,8 +41,8 @@
 }
 
 
-.button--no-label {
-	font-size: 0;
+.button__label--none {
 	position: absolute;
+	font-size: 0;
 	padding: 0;
 }
