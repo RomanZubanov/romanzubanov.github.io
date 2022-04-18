@@ -1,0 +1,48 @@
+
+.button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+   	appearance: none;
+   	border: 0;
+   	padding: 0;
+   	background: none;
+   	height: 40px;
+}
+
+.button__label {
+	font-size: 16;
+	font-weight: 500;
+	line-height: 16px;
+	vertical-align: middle;
+}
+
+.button--circle--pink:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #FF3E79;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button--icon--menu:after {
+	background-image: url('img/icon-menu.svg');
+}
+
+.button--icon--request:after {
+	background-image: url('img/icon-request.svg');
+}
+
+.button--icon--status:after {
+	background-image: url('img/icon-status.svg');
+}
+
+
+.button--no-label {
+	font-size: 0;
+	position: absolute;
+	padding: 0;
+}

@@ -1,3 +1,20 @@
-
+@import url('fonts/fonts.css');
 @import url('blocks/page/page.css');
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.page {
+	font-family: TT Lakes;
+}
+
+
+
+
+
 
