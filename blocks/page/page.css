@@ -1,0 +1,27 @@
+.page
+	 {
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.page__header {
+		height: 88px;
+		flex-basis: 100px;
+		flex-grow: 1;
+	}
+
+	.page__aside {
+		height: 88px;
+		flex-basis: 95px; /* временно */
+	}
+
+	.page__main {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.page__footer {
+		height: 50px;
+		flex-basis: 100%;
+	}
