@@ -2,6 +2,11 @@
 @import url('blocks/page/page.css');
 @import url('blocks/button/button.css');
 @import url('blocks/title-1/title-1.css');
+@import url('blocks/submenu/submenu.css');
+@import url('blocks/text/text.css');
+@import url('blocks/spoiler/spoiler.css');
+@import url('blocks/image/image.css');
+@import url('blocks/info/info.css');
 
 html {
   box-sizing: border-box;
@@ -14,13 +19,40 @@ html {
 	font-family: TT Lakes;
 }
 
+.spoiler__limiter {
+	max-height: 90px;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.spoiler__limiter {
+	max-height: 160px;
+	overflow: hidden;
+	}
+}
+
 @media screen and (min-width: 1120px) {
+	
 	.button--icon--request .button__label--none, 
 	.button--icon--status .button__label--none 	 {
 		
 		position: static;
 		font-size: 16px;
 		padding-right: 8px;
+		}
+
+	.submenu {
+		height: auto;
+		}
+
+	.submenu__list {
+		flex-wrap: wrap;
+		overflow: visible;
+		}
+
+	.spoiler__limiter {
+	max-height: unset;
+	overflow: auto;
 	}
 }
 

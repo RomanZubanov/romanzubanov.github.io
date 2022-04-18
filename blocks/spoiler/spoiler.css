@@ -1,0 +1,6 @@
+.spoiler__limiter {
+	max-height: 90px;
+	overflow-x: hidden;
+	overflow-y: ;
+	margin-bottom: 14px;
+}

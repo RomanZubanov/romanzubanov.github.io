@@ -5,15 +5,17 @@
    	border: 0;
    	padding: 0;
    	background: none;
-   	height: 40px;
 }
 
 .button__label {
-	padding-right: 8px;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 16px;
 	vertical-align: middle;
+}
+
+.button--circle--pink .button__label {
+	padding-right: 8px;
 }
 
 .button--circle--pink:after {
@@ -46,3 +48,27 @@
 	font-size: 0;
 	padding: 0;
 }
+
+
+/***  */
+
+.button--read-more {
+
+   	padding-left: 32px;
+   	font-size: 16px;
+   	line-height: 24px;
+   	font-weight: 500;
+	}
+
+.button--read-more::before {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	margin-left: -32px;
+	background-image: url("img/icon-read-more.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 8px;
+	}
+

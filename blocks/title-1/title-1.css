@@ -7,22 +7,19 @@
 		letter-spacing: -0.6px;	
 	}
 
-@media screen and (max-width: 1119px) {
+.title-1::before {
+	content: "";
+	width: 4px;
+	height: 40px;
+	vertical-align: top;
+	
+	display: inline-block;
+	position: absolute;
+	left: 0;
 
-	.title-1::before {
-		content: "";
-		width: 4px;
-		height: 40px;
-		vertical-align: top;
-		
-		display: inline-block;
-		position: absolute;
-		left: 0;
-
-		background-color: #41F6D7;
-		border-radius: 0 4px 4px 0;
+	background-color: #41F6D7;
+	border-radius: 0 4px 4px 0;
 	}
-}
 
 @media screen and (min-width: 1120px) {
 

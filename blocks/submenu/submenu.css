@@ -1,0 +1,54 @@
+.submenu {
+	height: 40px;
+	overflow: hidden;
+	}
+
+.submenu__list {
+	padding:  0;
+	margin: 0;
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+	}
+
+	.submenu__item {
+	padding: 8px 16px;
+	max-height: 40px;
+	}
+
+	.submenu__item--active {
+	box-sizing: border-box;
+	border: 2px solid #B8FFEC;
+	border-radius: 6px;
+	background-color: #fff;
+	padding-top: 6px;
+	}
+
+	.submenu__link {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	color: #7E7E82;
+	letter-spacing: -0.2px;
+	padding: 12px 0; /*увеличиваем область клика*/
+	}
+
+
+	@media screen and (min-width: 1120px) {
+
+		.submenu {
+			height: auto;
+			}
+
+		.submenu__list {
+			flex-wrap: wrap;
+			overflow: visible;
+			}
+	}	
+
