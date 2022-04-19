@@ -9,6 +9,7 @@
 
 .header__logo {
 	margin-left: 16px;
+	padding-top: 3px;
 }
 
 .header__contacts {
@@ -40,12 +41,13 @@
 		margin-left: 20px;
 		width: 2px;
 		height: 32px;
+		border-radius: 1px;
 		background-color: #EAEAEA;
 	}
 
 	.header__logo {
-	margin-left: 20px;
-}
+		margin-left: 20px;
+	}
 
 	.header__contacts {
 		position: static;
@@ -57,9 +59,9 @@
 @media screen and (min-width: 1120px) {
 
 	.header {
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 
 	.header__menu-button {
@@ -72,8 +74,8 @@
 	}
 
 	.header__contacts {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 17px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 17px;
 	}
 }

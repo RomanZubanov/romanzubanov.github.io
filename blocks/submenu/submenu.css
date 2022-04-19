@@ -1,6 +1,17 @@
 .submenu {
 	height: 40px;
 	overflow: hidden;
+	position: relative;
+	}
+
+	.submenu__list:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 24px;
+	height: 40px;
+	background: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1));
 	}
 
 .submenu__list {
@@ -39,16 +50,19 @@
 	padding: 12px 0; /*увеличиваем область клика*/
 	}
 
+@media screen and (min-width: 1120px) {
 
-	@media screen and (min-width: 1120px) {
+	.submenu {
+		height: auto;
+		}
 
-		.submenu {
-			height: auto;
-			}
+	.submenu__list {
+		flex-wrap: wrap;
+		overflow: visible;
+		}
 
-		.submenu__list {
-			flex-wrap: wrap;
-			overflow: visible;
-			}
-	}	
+	.submenu__list:after {
+		display: none;
+	}
+}	
 
