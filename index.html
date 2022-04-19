@@ -20,25 +20,39 @@
 
 <body class="page">
 	
-	<header class="page__header">
-		<button class="button button--circle--pink button--icon--menu">
-			<span class="button__label button__label--none">Меню</span>
-		</button>
+	<header class="page__header header">
+		<div class="header__menu-button">
+			<button class="button button--circle--pink button--icon--menu">
+				<span class="button__label button__label--none">Меню</span>
+			</button>
+		</div>
 
-		<div class="logo">
+		<div class="header__logo logo">
 			<a class="logo__link" href="/">
 				<img class="logo__image" src="images/logo.svg" alt="Логотип компании CPS">
 			</a>
 		</div>
 
+		<div class="header__contacts">
+			<button class="button button--circle--pink button--icon--phone">
+			<span class="button__label button__label--none">Позвонить</span>
+			</button>
+			<button class="button button--circle--pink button--icon--chat">
+			<span class="button__label button__label--none">Написать в чат</span>
+			</button>
+			<button class="button button--circle--pink button--icon--profile">
+			<span class="button__label button__label--none">Профиль</span>
+			</button>
+		</div>
+
 	</header>
 
-	<aside class="page__aside">
+	<aside class="page__aside aside">
 
-		<button class="button button--circle--pink button--icon--request">
+		<button class="aside__elem button button--circle--pink button--icon--request">
 			<span class="button__label button__label--none">Оставить заявку</span>
 		</button>
-		<button class="button button--circle--pink button--icon--status">
+		<button class="aside__elem button button--circle--pink button--icon--status">
 			<span class="button__label button__label--none">Статус ремонта</span>
 		</button>
 

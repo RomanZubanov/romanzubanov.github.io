@@ -42,6 +42,20 @@
 	background-image: url('img/icon-status.svg');
 }
 
+.button--icon--phone:after {
+	background-image: url('img/icon-phone.svg');
+}
+
+.button--icon--chat:after {
+	background-image: url('img/icon-chat.svg');
+	background-position: 50% 55%;
+}
+
+.button--icon--profile:after {
+	background-image: url('img/icon-profile.svg');
+	background-position: 50% 45%;
+}
+
 
 .button__label--none {
 	position: absolute;

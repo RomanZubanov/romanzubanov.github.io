@@ -1,0 +1,19 @@
+
+
+.aside {
+	display: flex;
+	align-items: center;
+}
+
+.aside__elem:not(:last-child) {
+	padding-right: 16px;
+}
+
+.aside::before {
+	content: "";
+	display: block;
+	margin-right: 20px;
+	width: 2px;
+	height: 32px;
+	background-color: #EAEAEA;
+}

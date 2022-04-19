@@ -9,14 +9,11 @@
 		height: 88px;
 		flex-basis: 100px;
 		flex-grow: 1;
-		display: flex;
-		align-items: center;
 	}
 
 	.page__aside {
 		height: 88px;
-		display: flex;
-		align-items: center;
+		padding-right: 16px;
 	}
 
 	.page__main {
@@ -31,6 +28,15 @@
 		height: 50px;
 		flex-basis: 100%;
 	}
+
+@media screen and (min-width: 768px) {
+	.page__aside {
+		height: 88px;
+		padding-right: 24px;
+	}
+}
+
+
 
 @media screen and (min-width: 1120px) {
 
