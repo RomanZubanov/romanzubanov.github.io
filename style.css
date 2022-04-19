@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'TT Lakes';
     src: local('TT Lakes Bold'), local('TT Lakes-Bold'),
-         url('../../fonts/TTLakes-Regular.woff') format('woff'),
+         url('https://github.com/RomanZubanov/romanzubanov.github.io/blob/d334a08a745ef3065c7a481784c6bb78765caa55/fonts/TTLakes-Regular.woff?raw=true') format('woff'),
     font-weight: 400;
     font-style: normal;
 	}
@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'TT Lakes';
     src: local('TTT Lakes Medium'), local('TT Lakes-Medium'),
-        url('../../fonts/TTLakes-Bold.woff') format('woff'),
+        url('https://github.com/RomanZubanov/romanzubanov.github.io/blob/d334a08a745ef3065c7a481784c6bb78765caa55/fonts/TTLakes-Bold.woff?raw=true') format('woff'),
     font-weight: 500;
     font-style: normal;
 	}
@@ -29,8 +29,8 @@
 @font-face {
     font-family: 'TT Lakes';
     src: local('TT Lakes Regular'), local('TT Lakes-Regular'),
-        url('../../fonts/TTLakes-Bold.woff') format('woff'),
-    font-weight: 700;
+        url('https://github.com/RomanZubanov/romanzubanov.github.io/blob/d334a08a745ef3065c7a481784c6bb78765caa55/fonts/TTLakes-Bold.woff?raw=true') format('woff'),
+    font-weight: 700;                                                     
     font-style: normal;
 	}
 
