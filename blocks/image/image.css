@@ -1,7 +1,11 @@
-.image {
-	border-radius: 6px;
-	}
-
 .image__img {
 	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	
+	.image__img { 
+		border-radius: 6px;
+	}
+
 }

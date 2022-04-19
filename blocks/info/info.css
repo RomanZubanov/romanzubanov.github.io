@@ -1,20 +1,25 @@
+
+.info__elem-2 {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
 .info {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-}
-
+	}
 
 .info__elem-1 {
 	flex-basis: 312px;
 	flex-grow: 1;
-	margin-right: 36px;
-	
-}
+	}
 
 .info__elem-2 {
 	flex-basis: 360px;
 	flex-grow: 1;
 	max-width: 532px;
+	}
 }
