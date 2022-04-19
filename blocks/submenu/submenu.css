@@ -38,7 +38,7 @@
 	border: 2px solid #B8FFEC;
 	border-radius: 6px;
 	background-color: #fff;
-	padding-top: 6px; /*компенсируем рамку чтобы была одна baseline*/
+	padding-top: 6px;
 	}
 
 	.submenu__link {
@@ -64,4 +64,5 @@
 	.submenu__list:after {
 		display: none;
 	}
+
 }	
