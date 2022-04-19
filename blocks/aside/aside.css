@@ -18,3 +18,9 @@
 	border-radius: 1px;
 	background-color: #EAEAEA;
 }
+
+@media screen and (min-width: 1120px) {
+	.aside::before {
+		display: none;
+	}
+}
