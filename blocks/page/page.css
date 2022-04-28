@@ -1,3 +1,5 @@
+
+
 .page
 	 {
 		margin: auto;
@@ -50,11 +52,11 @@
 
 	.page__header {
 		position: fixed;
-		left: -200px;
 		z-index: 100;
-		width: 305px;
+		width: 320px;
 		height: 100vh;
 		align-items: flex-start;
+		overflow: auto;
 		}
 
 	.page__aside {
@@ -68,6 +70,7 @@
 
 	.page__main {
 		position: relative;
+		margin-left: 320px;
 		}
 
 	.page__footer {

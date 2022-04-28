@@ -30,6 +30,15 @@
 	background-position: center;
 }
 
+.button--circle--pink {
+	transition: .2s;
+}
+
+.button--circle--pink:hover {
+	filter: hue-rotate(-60deg);
+	transform: scale(1.2);
+}
+
 .button--icon--menu:after {
 	background-image: url('img/icon-menu.svg');
 }
@@ -54,6 +63,11 @@
 .button--icon--profile:after {
 	background-image: url('img/icon-profile.svg');
 	background-position: 50% 45%;
+}
+
+.button--icon--search:after {
+	background-image: url('img/icon-search.svg');
+	background-position: 50% 50%;
 }
 
 

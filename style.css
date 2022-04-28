@@ -9,6 +9,11 @@
 @import url('blocks/spoiler/spoiler.css');
 @import url('blocks/image/image.css');
 @import url('blocks/info/info.css');
+@import url('blocks/menu/menu.css');
+@import url('blocks/email/email.css');
+@import url('blocks/phone/phone.css');
+@import url('blocks/lang-switcher/lang-switcher.css');
+
 
 @font-face {
     font-family: 'TT Lakes';
