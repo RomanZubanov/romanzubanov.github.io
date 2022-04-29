@@ -43,6 +43,10 @@
 	background-image: url('img/icon-menu.svg');
 }
 
+.button--icon--close-menu:after {
+	background-image: url('img/icon-close-menu.svg');
+}
+
 .button--icon--request:after {
 	background-image: url('img/icon-request.svg');
 }

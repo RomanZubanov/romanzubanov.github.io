@@ -2,15 +2,17 @@
 
 .page
 	 {
-		margin: auto;
 		display: flex;
-		flex-wrap: wrap;
+		align-items: stretch;
+		margin-left: 0;
+		margin-right: auto;
+		min-height: 100vh;
+		margin: 0;
+
 	}
 
 	.page__header {
-		height: 88px;
-		flex-basis: 100px;
-		flex-grow: 1;
+	width: 320px;
 	}
 
 	.page__aside {
@@ -41,23 +43,10 @@
 
 
 
-@media screen and (min-width: 1120px) {
+/*@media screen and (min-width: 1120px) {*/
 
-	.page {	
-		display: block;
-		position: relative;
-		margin-left: 0;
-		margin-right: auto;
-		}
 
-	.page__header {
-		position: fixed;
-		z-index: 100;
-		width: 320px;
-		height: 100vh;
-		align-items: flex-start;
-		overflow: auto;
-		}
+
 
 	.page__aside {
 		position: absolute;
@@ -68,13 +57,10 @@
 		right: 0;
 		}
 
-	.page__main {
-		position: relative;
-		margin-left: 320px;
-		}
 
 	.page__footer {
 		display: none;
 		height: 50px;
 		}
-}
+/*}*/
+
