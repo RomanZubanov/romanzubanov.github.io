@@ -14,8 +14,8 @@
 <body>
 <section class="brands">
 
-  <div class="spoiler__limiter  swiper mySwiper">
-  <div class="brands__container swiper-wrapper">
+  <div class="spoiler__limiter">
+    <div class="brands__container">
       <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
       <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
       <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
@@ -44,6 +44,13 @@
 
 <script>
     if (window.innerWidth <= 768) {
+      let spoilerLimiter = document.querySelector('.spoiler__limiter');
+      spoilerLimiter.classList.add('swiper');
+      spoilerLimiter.classList.add('mySwiper');
+
+      let brandsContainer = spoilerLimiter.querySelector('.brands__container');
+      brandsContainer.classList.add('swiper-wrapper');
+
         let swiper = new Swiper(".mySwiper", {
             slidesPerView: 'auto',
             spaceBetween: 16,

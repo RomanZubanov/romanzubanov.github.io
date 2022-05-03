@@ -1,16 +1,5 @@
 
-@media screen and (min-width: 1200px) {
-	.spoiler__limiter {
-		max-height: 500px;
-		overflow: hidden;
-		margin-bottom: 14px;
-		transition: height 0.5s;
-	}
 
-	.spoiler__limiter--open {
-		height: auto;
-	}
-}
 
 @media screen and (min-width: 768px) {
 	.spoiler__limiter {
@@ -20,11 +9,23 @@
 		transition: height 0.5s;
 	}
 	.spoiler__limiter--open {
-		height: auto;
+		height: 350px;
 	}
 
 	.spoiler__switcher {
 		display: block;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.spoiler__limiter {
+		overflow: hidden;
+		margin-bottom: 14px;
+		transition: height 0.5s;
+	}
+
+	.spoiler__limiter--open {
+		height: 260px;
 	}
 }
 
