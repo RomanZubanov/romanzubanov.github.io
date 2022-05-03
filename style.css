@@ -13,7 +13,9 @@
 @import url('blocks/email/email.css');
 @import url('blocks/phone/phone.css');
 @import url('blocks/lang-switcher/lang-switcher.css');
-
+@import url('blocks/brands/brands.css');
+@import url('blocks/spoiler/spoiler.css');
+@import url('blocks/Swiper/swiper.css');
 
 @font-face {
     font-family: 'TT Lakes';

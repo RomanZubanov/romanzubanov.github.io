@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
+
+
+  <link rel="stylesheet" href="swiper.css"
+  />
+  <link rel="stylesheet" href="../brands/brands.css">
+
+
+</head>
+
+<body>
+
+<section class="brands swiper mySwiper">
+
+  <div class="brands__container swiper-wrapper">
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/viewsonic.png" alt="логотип ViewSonic"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/bosch.png" alt="логотип Lenovo"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/hp.png" alt="логотип Samsung"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/acer.png" alt="логотип Apple"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/sony.png" alt="логотип ViewSonic"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
+    <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="../brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</section>
+
+<!-- Swiper
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+-->
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  if (window.innerWidth <= 768) {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  };
+</script>
+</body>
+</html>

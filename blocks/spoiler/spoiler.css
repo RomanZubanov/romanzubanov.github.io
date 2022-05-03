@@ -1,34 +1,32 @@
 
+@media screen and (min-width: 1200px) {
+	.spoiler__limiter {
+		max-height: 500px;
+		overflow: hidden;
+		margin-bottom: 14px;
+		transition: height 0.5s;
+	}
 
-.spoiler__limiter {
-	height: 50px;
-	overflow: hidden;
-	margin-bottom: 14px;
-	transition: height 1s;
+	.spoiler__limiter--open {
+		height: auto;
+	}
 }
 
-
-.spoiler__limiter--open {
-	height: 140px;
-}
-
-/*
 @media screen and (min-width: 768px) {
-	
 	.spoiler__limiter {
-	max-height: 160px;
-	overflow: hidden;
+		height: 170px;
+		overflow: hidden;
+		margin-bottom: 14px;
+		transition: height 0.5s;
+	}
+	.spoiler__limiter--open {
+		height: auto;
+	}
+
+	.spoiler__switcher {
+		display: block;
 	}
 }
-
-@media screen and (min-width: 1120px) {
-
-	.spoiler__limiter {
-		max-height: unset;
-		overflow: auto;
-	}
-}
-*/
 
 /* Кнопка Показать все / Скрыть */
 
@@ -55,11 +53,23 @@
 	transform: rotate(180deg);
 }
 
+.spoiler__label {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
 .spoiler__checkbox:checked + .spoiler__label {
 	font-size: 0;
 }
 
 .spoiler__checkbox:checked + .spoiler__label:after {
 	content: attr(data-text);
-	font-size: 14px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 767px){
+	.spoiler__switcher {
+		display: none;
+	}
 }

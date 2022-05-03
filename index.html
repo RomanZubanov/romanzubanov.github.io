@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ремонт техники DELL">
+  <meta name="keywords" content="ремонт ноутбуков, ремонт DELL">
+  <link rel="stylesheet" href="style.css">
+  <title>Ремонт техники DELL. Бренды, которые ремонтируем</title>
+
+
+
+</head>
+<body>
+<section class="brands">
+
+  <div class="spoiler__limiter  swiper mySwiper">
+  <div class="brands__container swiper-wrapper">
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/viewsonic.png" alt="логотип ViewSonic"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/bosch.png" alt="логотип Lenovo"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/hp.png" alt="логотип Samsung"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/acer.png" alt="логотип Apple"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/sony.png" alt="логотип ViewSonic"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
+      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+    </div>
+  </div>
+    <div class="swiper-pagination"></div>
+    <label class="spoiler__switcher">
+      <input class="spoiler__checkbox" type="checkbox">
+      <span class="spoiler__label" data-text="Скрыть">Показать все</span>
+    </label>
+
+
+</section>
+
+
+<script src="blocks/spoiler/spoiler.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    if (window.innerWidth <= 768) {
+        let swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    };
+</script>
+</body>
+</html>
