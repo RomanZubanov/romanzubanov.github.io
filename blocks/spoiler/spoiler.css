@@ -1,9 +1,18 @@
+
+
 .spoiler__limiter {
-	max-height: 90px;
+	height: 50px;
 	overflow: hidden;
 	margin-bottom: 14px;
+	transition: height 1s;
 }
 
+
+.spoiler__limiter--open {
+	height: 140px;
+}
+
+/*
 @media screen and (min-width: 768px) {
 	
 	.spoiler__limiter {
@@ -13,8 +22,44 @@
 }
 
 @media screen and (min-width: 1120px) {
-	
+
 	.spoiler__limiter {
-	max-height: unset;
-	overflow: auto;
+		max-height: unset;
+		overflow: auto;
 	}
+}
+*/
+
+/* Кнопка Показать все / Скрыть */
+
+.spoiler__switcher {
+	display: flex;
+	align-items: center;
+	width: 200px;
+}
+
+.spoiler__checkbox {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 24px;
+	height: 24px;
+	background-image: url("img/icon-read-more.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 8px 0 0;
+}
+
+.spoiler__checkbox:checked {
+	transform: rotate(180deg);
+}
+
+.spoiler__checkbox:checked + .spoiler__label {
+	font-size: 0;
+}
+
+.spoiler__checkbox:checked + .spoiler__label:after {
+	content: attr(data-text);
+	font-size: 14px;
+}
