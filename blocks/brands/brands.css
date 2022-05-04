@@ -1,8 +1,20 @@
 
 .brands {
-    margin: auto;
     max-height: 100%;
     overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .brands::before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        width: 24px;
+        height: 81px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
 }
 
 
@@ -56,11 +68,26 @@
     border-radius: 6px;
 }
 
+.brands__item:first-child {
+    margin-left: 16px;
+}
+.brands__item:last-child {
+    margin-right: 16px;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
     .brands__item {
         flex-basis: 224px;
+    }
+
+    .brands__item:first-child {
+        margin-left: 0;
+    }
+    .brands__item:last-child {
+        margin-right: 0;
     }
 }
 

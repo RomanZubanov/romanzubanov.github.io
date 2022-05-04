@@ -8,58 +8,38 @@
   <link rel="stylesheet" href="style.css">
   <title>Ремонт техники DELL. Бренды, которые ремонтируем</title>
 
-
-
 </head>
-<body>
-<section class="brands">
+<body class="page">
+<main class="page__main main">
+  <h2 class="title-2 main__title-2"><span class="title-2__text">Ремонт техники различных брендов</span></h2>
+  <section class="brands main__brands">
 
-  <div class="spoiler__limiter">
-    <div class="brands__container">
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/viewsonic.png" alt="логотип ViewSonic"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/bosch.png" alt="логотип Lenovo"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/hp.png" alt="логотип Samsung"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/acer.png" alt="логотип Apple"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/sony.png" alt="логотип ViewSonic"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
-      <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+    <div class="spoiler__limiter">
+      <div class="brands__container">
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/viewsonic.png" alt="логотип ViewSonic"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/bosch.png" alt="логотип Lenovo"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/hp.png" alt="логотип Samsung"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/acer.png" alt="логотип Apple"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/sony.png" alt="логотип ViewSonic"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/lenovo.png" alt="логотип Lenovo"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/samsung.png" alt="логотип Samsung"></div></div>
+        <div class="brands__item swiper-slide"><div class="brands__img-wrapper"><img class="brands__img" src="blocks/brands/brands__image/apple.png" alt="логотип Apple"></div></div>
+      </div>
     </div>
-  </div>
-    <div class="swiper-pagination"></div>
-    <label class="spoiler__switcher">
-      <input class="spoiler__checkbox" type="checkbox">
-      <span class="spoiler__label" data-text="Скрыть">Показать все</span>
-    </label>
+      <div class="swiper-pagination"></div>
+      <label class="spoiler__switcher">
+        <input class="spoiler__checkbox" type="checkbox">
+        <span class="spoiler__label" data-text="Скрыть">Показать все</span>
+      </label>
 
-
-</section>
-
+  </section>
+</main>
 
 <script src="blocks/spoiler/spoiler.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="blocks/Swiper/swiper.js"></script>
 
-<script>
-    if (window.innerWidth <= 768) {
-      let spoilerLimiter = document.querySelector('.spoiler__limiter');
-      spoilerLimiter.classList.add('swiper');
-      spoilerLimiter.classList.add('mySwiper');
-
-      let brandsContainer = spoilerLimiter.querySelector('.brands__container');
-      brandsContainer.classList.add('swiper-wrapper');
-
-        let swiper = new Swiper(".mySwiper", {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    };
-</script>
 </body>
 </html>

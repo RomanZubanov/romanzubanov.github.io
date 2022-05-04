@@ -1,7 +1,18 @@
+.main {
+	background-color: #EAEAEA;
+}
+
 
 .main__title-1 {
 	padding: 24px 16px;
 }
+
+
+.main__title-2 {
+	padding-left: 16px;
+	margin-bottom: 16px;
+}
+
 
 .main__submenu {
 	padding-left: 16px;
@@ -21,13 +32,22 @@
 	.main__title-1 {
 		padding: 24px 24px 32px 24px;
 	}
-	
+
+	.main__title-2 {
+		padding-left: 24px;
+		margin-bottom: 24px;
+	}
+
+	.main__brands {
+		margin-left: 24px;
+	}
+
 	.main__submenu {
-	padding-left: 24px;
+		padding-left: 24px;
 	}
 
 	.main__spoiler {
-	padding: 32px 24px 32px 24px;
+		padding: 32px 24px 32px 24px;
 	}
 
 	.main__image {
@@ -39,6 +59,15 @@
 
 	.main__title-1 {
 	padding: 42px 450px 8px 34px;
+	}
+
+	.main__title-2 {
+		padding-left: 32px;
+		margin-bottom: 24px;
+	}
+
+	.main__brands {
+		margin-left: 32px;
 	}
 	
 	.main__submenu {
